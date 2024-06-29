@@ -31,7 +31,7 @@ function resetTimer() {
     clearInterval(timerInterval);
     elapsedTime = 0;
     startTime = 0;
-    updateTime();
+    timeDisplay.textContent = formatTime(startTime);
     laps = [];
     renderLaps();
     startBtn.disabled = false;
